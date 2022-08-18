@@ -1,6 +1,9 @@
 # Static Web
 
-A very cool website.
+SJC 
+website.
+
+copy and paste sjc open day website for learning purpose
 
 ## Technology
 		
