@@ -1,7 +1,23 @@
 extends ../layouts/default
 
-block content
-	.container
-		h1 Welcome to Breadtam bakery!
-		br
-		p  this is a very very good website
+block content 
+    .container
+        div#carouselExampleIndicators.carousel.slide(data-bs-ride="true")
+            div.carousel-indicators
+                button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0").active(aria-current="true" aria-label="Slide 1")
+                button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2")
+  
+            div.carousel-inner
+                div.carousel-item.active
+                    img.d-block.w-100(src="images/indeximg.webp" alt="...")
+    
+                div.carousel-item
+                    img.d-block.w-100(src="images/hoodie.webp" alt="...")
+    
+            button.carousel-control-prev(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev")
+                span.carousel-control-prev-icon(aria-hidden="true")
+                span.visually-hidden Previous
+ 
+            button.carousel-control-next(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next")
+                span.carousel-control-next-icon(aria-hidden="true")
+                span.visually-hidden Next
