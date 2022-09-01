@@ -1,5 +1,8 @@
 extends ../layouts/default
 
+block variables
+    - let currentPage = "index";
+    
 block content 
     .container
         div#carouselExampleIndicators.carousel.slide(data-bs-ride="true")

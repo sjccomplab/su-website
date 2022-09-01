@@ -4,7 +4,10 @@ nav#myNav.navbar.navbar-expand-lg.navbar-dark.bg-dark(style="background-color: #
         span.navbar-toggler-icon.navbar-light
     .collapse.navbar-collapse#orderNav
         ul.nav.navbar-nav.mr-auto
-            li.nav-item: a.nav-link(href="index.html") Home
+            if currentPage == "index"
+                li.nav-item: a.nav-link.active(href="index.html") Home
+            else
+                li.nav-item: a.nav-link(href="index.html") Home
             li.nav-item: a.nav-link(href="about.html") About
             li.nav-item: a.nav-link(href="information.html") Information
             //- li.nav-item: a.nav-link(href="programme.html") Programme
