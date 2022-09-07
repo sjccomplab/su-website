@@ -1,5 +1,8 @@
 extends ../layouts/default
 
+block variables 
+    - let currentPage = "store";
+
 block content
     .container
         div#carouselExampleIndicators.carousel.slide(data-bs-ride="true")
@@ -31,4 +34,3 @@ block content
         p The Online Souvenir Shop is now closed.
 
         p Please come to the 147st Anniversary Green and White Day to purchase our souvenirs!
-

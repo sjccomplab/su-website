@@ -4,23 +4,26 @@ block variables
     - let currentPage = "index";
     
 block content 
+    div#carouselExampleIndicators.carousel.slide(data-bs-ride="true")
+        div.carousel-indicators
+            button.active(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1")
+            button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2")
+
+        div.carousel-inner
+            div.carousel-item.active
+                img.d-block.w-100(src="images/indeximg.webp" alt="...")
+
+            div.carousel-item
+                img.d-block.w-100(src="images/hoodie.webp" alt="...")
+
+        button.carousel-control-prev(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev")
+            span.carousel-control-prev-icon(aria-hidden="true")
+            span.visually-hidden Previous
+
+        button.carousel-control-next(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next")
+            span.carousel-control-next-icon(aria-hidden="true")
+            span.visually-hidden Next
     .container
-        div#carouselExampleIndicators.carousel.slide(data-bs-ride="true")
-            div.carousel-indicators
-                button.active(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1")
-                button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2")
-  
-            div.carousel-inner
-                div.carousel-item.active
-                    img.d-block.w-100(src="images/indeximg.webp" alt="...")
-    
-                div.carousel-item
-                    img.d-block.w-100(src="images/hoodie.webp" alt="...")
-    
-            button.carousel-control-prev(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev")
-                span.carousel-control-prev-icon(aria-hidden="true")
-                span.visually-hidden Previous
- 
-            button.carousel-control-next(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next")
-                span.carousel-control-next-icon(aria-hidden="true")
-                span.visually-hidden Next
+        #video.row.justify-content-md-center.mt-5
+            .col-12.col-sm-12.col-md-9.col-lg-9.col-xl-9.col-xxl-9
+                iframe(src="https://www.youtube.com/embed/BocKmnJyh3A")

@@ -8,10 +8,38 @@ nav#myNav.navbar.navbar-expand-lg.navbar-dark.bg-dark(style="background-color: #
                 li.nav-item: a.nav-link.active(href="index.html") Home
             else
                 li.nav-item: a.nav-link(href="index.html") Home
-            li.nav-item: a.nav-link(href="about.html") About
-            li.nav-item: a.nav-link(href="information.html") Information
-            //- li.nav-item: a.nav-link(href="programme.html") Programme
-            li.nav-item: a.nav-link(href="store.html") Store 
-            //- li.nav-item: a.nav-link(href="production.html") Production
-            li.nav-item: a.nav-link(href="compliments.html") Compliments
-            //- li.nav-item: a.nav-link(href="gallery.html") Gallery
+            
+            if currentPage == "about"
+                li.nav-item: a.nav-link.active(href="about.html") About
+            else
+                li.nav-item: a.nav-link(href="about.html") About
+            
+            if currentPage == "information"
+                li.nav-item: a.nav-link.active(href="information.html") Information
+            else
+                li.nav-item: a.nav-link(href="information.html") Information
+            
+            //- if currentPage == "information"
+            //-     li.nav-item: a.nav-link.active(href="programme.html") Programme
+            //- else
+            //-     li.nav-item: a.nav-link(href="programme.html") Programme
+            
+            if currentPage == "store"
+                li.nav-item: a.nav-link.active(href="store.html") Store
+            else
+                li.nav-item: a.nav-link(href="store.html") Store
+            
+            if currentPage == "production"
+                li.nav-item: a.nav-link.active(href="production.html") Production
+            else
+                li.nav-item: a.nav-link(href="production.html") Production
+            
+            if currentPage == "compliments"
+                li.nav-item: a.nav-link.active(href="compliments.html") Compliments
+            else
+                li.nav-item: a.nav-link(href="compliments.html") Compliments
+            
+            //- if currentPage == "gallery"
+            //-     li.nav-item: a.nav-link.active(href="gallery.html") Gallery
+            //- else
+            //-     li.nav-item: a.nav-link(href="gallery.html") Gallery
