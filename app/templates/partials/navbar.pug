@@ -1,9 +1,9 @@
 nav#myNav.navbar.navbar-expand-lg.navbar-dark.bg-dark(style="background-color: #28241c;"): .container.my-1
-    a.navbar-brand(href='index.html') Static Web
+    a.navbar-brand(href='index.html'): img(src="images/sulogo.webp" alt="" height="4    0px")
     button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target="#orderNav" aria-controls="orderNav" aria-expanded="false" aria-label="Toggle navigation")
         span.navbar-toggler-icon.navbar-light
     .collapse.navbar-collapse#orderNav
-        ul.nav.navbar-nav.mr-auto
+        ul.nav.navbar-nav.mx-auto
             if currentPage == "index"
                 li.nav-item: a.nav-link.active(href="index.html") Home
             else
@@ -19,7 +19,7 @@ nav#myNav.navbar.navbar-expand-lg.navbar-dark.bg-dark(style="background-color: #
             else
                 li.nav-item: a.nav-link(href="information.html") Information
             
-            //- if currentPage == "information"
+            //- if currentPage == "programme"
             //-     li.nav-item: a.nav-link.active(href="programme.html") Programme
             //- else
             //-     li.nav-item: a.nav-link(href="programme.html") Programme
@@ -43,3 +43,6 @@ nav#myNav.navbar.navbar-expand-lg.navbar-dark.bg-dark(style="background-color: #
             //-     li.nav-item: a.nav-link.active(href="gallery.html") Gallery
             //- else
             //-     li.nav-item: a.nav-link(href="gallery.html") Gallery
+
+        span.navbar-text
+            i.fa-solid.fa-bag-shopping.vertical-center.fa-xl
