@@ -1,17 +1,48 @@
 nav#myNav.navbar.navbar-expand-lg.navbar-dark.bg-dark(style="background-color: #28241c;"): .container.my-1
-    a.navbar-brand(href='index.html') Static Web
+    a.navbar-brand(href='index.html'): img(src="images/sulogo.webp" alt="" height="40px")
     button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target="#orderNav" aria-controls="orderNav" aria-expanded="false" aria-label="Toggle navigation")
         span.navbar-toggler-icon.navbar-light
     .collapse.navbar-collapse#orderNav
-        ul.nav.navbar-nav.mr-auto
+        ul.nav.navbar-nav.mx-auto
             if currentPage == "index"
                 li.nav-item: a.nav-link.active(href="index.html") Home
             else
                 li.nav-item: a.nav-link(href="index.html") Home
-            li.nav-item: a.nav-link(href="about.html") About
-            li.nav-item: a.nav-link(href="information.html") Information
-            //- li.nav-item: a.nav-link(href="programme.html") Programme
-            li.nav-item: a.nav-link(href="store.html") Store 
-            //- li.nav-item: a.nav-link(href="production.html") Production
-            li.nav-item: a.nav-link(href="compliments.html") Compliments
-            //- li.nav-item: a.nav-link(href="gallery.html") Gallery
+            
+            if currentPage == "about"
+                li.nav-item: a.nav-link.active(href="about.html") About
+            else
+                li.nav-item: a.nav-link(href="about.html") About
+            
+            if currentPage == "information"
+                li.nav-item: a.nav-link.active(href="information.html") Information
+            else
+                li.nav-item: a.nav-link(href="information.html") Information
+            
+            //- if currentPage == "programme"
+            //-     li.nav-item: a.nav-link.active(href="programme.html") Programme
+            //- else
+            //-     li.nav-item: a.nav-link(href="programme.html") Programme
+            
+            if currentPage == "store"
+                li.nav-item: a.nav-link.active(href="store.html") Store
+            else
+                li.nav-item: a.nav-link(href="store.html") Store
+            
+            if currentPage == "production"
+                li.nav-item: a.nav-link.active(href="production.html") Production
+            else
+                li.nav-item: a.nav-link(href="production.html") Production
+            
+            if currentPage == "compliments"
+                li.nav-item: a.nav-link.active(href="compliments.html") Compliments
+            else
+                li.nav-item: a.nav-link(href="compliments.html") Compliments
+            
+            //- if currentPage == "gallery"
+            //-     li.nav-item: a.nav-link.active(href="gallery.html") Gallery
+            //- else
+            //-     li.nav-item: a.nav-link(href="gallery.html") Gallery
+
+        span.navbar-text
+            i.fa-solid.fa-bag-shopping.vertical-center.fa-xl
