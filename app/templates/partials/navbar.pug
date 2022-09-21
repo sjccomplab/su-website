@@ -19,10 +19,10 @@ nav#myNav.navbar.navbar-expand-lg.navbar-dark.bg-dark(style="background-color: #
             else
                 li.nav-item: a.nav-link(href="information.html") Information
             
-            //- if currentPage == "programme"
-            //-     li.nav-item: a.nav-link.active(href="programme.html") Programme
-            //- else
-            //-     li.nav-item: a.nav-link(href="programme.html") Programme
+            if currentPage == "programme"
+                li.nav-item: a.nav-link.active(href="programme.html") Programme
+            else
+                li.nav-item: a.nav-link(href="programme.html") Programme
             
             if currentPage == "store"
                 li.nav-item: a.nav-link.active(href="store.html") Store
